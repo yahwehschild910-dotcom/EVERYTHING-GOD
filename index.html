@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Msomi Digital Library</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#0f172a;
+    --secondary:#2563eb;
+    --light:#f8fafc;
+    --dark:#1e293b;
+    --accent:#3b82f6;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+header{
+    background:var(--primary);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    padding:100px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2rem;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    font-size:1.4rem;
+    color:var(--secondary);
+    font-weight:700;
+    margin:10px 0;
+}
+
+.action-btn{
+    display:block;
+    text-align:center;
+    background:var(--secondary);
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.testimonial{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.newsletter{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:60px 30px;
+}
+
+.newsletter input{
+    padding:15px;
+    width:300px;
+    max-width:100%;
+    border:none;
+    border-radius:8px;
+    margin:10px;
+}
+
+.newsletter button{
+    padding:15px 25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.faq-item{
+    background:white;
+    margin-bottom:15px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.4rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">Msomi Digital Library</div>
+<div class="nav-links">
+<a href="#products">PDFs</a>
+<a href="#reviews">Reviews</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Premium Digital PDFs That Deliver Results</h1>
+<p>Discover expertly crafted guides, eBooks, templates and educational resources designed to help you learn, earn and grow.</p>
+<a href="#products" class="btn">Browse PDFs</a>
+</section>
+
+<section id="products">
+<div class="container">
+<h2 class="section-title">Featured PDFs</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/600x400" alt="">
+<div class="card-content">
+<h3>Business Starter Guide</h3>
+<p>Learn how to launch and grow a profitable business.</p>
+<div class="price">R99</div>
+<a href="preview-link.pdf" class="action-btn">Preview PDF</a>
+<a href="payment-link" class="action-btn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/600x400" alt="">
+<div class="card-content">
+<h3>Study Master Notes</h3>
+<p>Comprehensive study notes for students.</p>
+<div class="price">R49</div>
+<a href="preview-link.pdf" class="action-btn">Preview PDF</a>
+<a href="payment-link" class="action-btn">Buy Now</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/600x400" alt="">
+<div class="card-content">
+<h3>Success & Discipline eBook</h3>
+<p>Build habits that create long-term success.</p>
+<div class="price">R79</div>
+<a href="preview-link.pdf" class="action-btn">Preview PDF</a>
+<a href="payment-link" class="action-btn">Buy Now</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="container">
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+★★★★★
+<p>"One of the best digital guides I've purchased."</p>
+<strong>- Customer</strong>
+</div>
+
+<div class="testimonial">
+★★★★★
+<p>"Professional content and instant delivery."</p>
+<strong>- Customer</strong>
+</div>
+
+<div class="testimonial">
+★★★★★
+<p>"Worth every rand. Highly recommended."</p>
+<strong>- Customer</strong>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="newsletter">
+<h2>Get New PDF Releases First</h2>
+<p>Join the mailing list for updates and exclusive discounts.</p>
+
+<form>
+<input type="email" placeholder="Enter your email">
+<button type="submit">Subscribe</button>
+</form>
+
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="container">
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>How do I receive my PDF?</h3>
+<p>Immediately after successful payment.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I access it on my phone?</h3>
+<p>Yes. All PDFs work on smartphones, tablets and computers.</p>
+</div>
+
+<div class="faq-item">
+<h3>What payment methods do you accept?</h3>
+<p>PayFast, Yoco, PayPal and Stripe.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact">
+<h2 class="section-title">Contact Us</h2>
+<p>Email: your@email.com</p>
+<p>WhatsApp: +27 XX XXX XXXX</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Msomi Digital Library. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
